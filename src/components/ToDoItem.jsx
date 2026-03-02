@@ -1,3 +1,5 @@
+import { memo } from 'react'
+
 const ToDoItem = (props) => {
   const {
     className = '',
@@ -50,4 +52,4 @@ const ToDoItem = (props) => {
   )
 }
 
-export default ToDoItem
+export default memo(ToDoItem)
