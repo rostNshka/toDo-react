@@ -9,7 +9,7 @@ const ToDoList = () => {
   } = useContext(TasksContext)
 
   const hasTasks = tasks.length > 0
-  const isEmptyFilteredTasks = filteredTasks?.length > 0
+  const isEmptyFilteredTasks = filteredTasks?.length === 0
 
   if (!hasTasks) {
     return <div className="todo__empty-message">Задач пока нет</div>
