@@ -11,9 +11,14 @@ const AddTaskForm = () => {
     newTaskInputRef,
   } = useContext(TasksContext)
 
+  const clearNewTaskTitle = newTaskTitle.trim()
+  const isTaskTitleEmpty = clearNewTaskTitle.length === 0
+
   const onSubmit = (event) => {
     event.preventDefault()
-    addTask()
+    if (!isTaskTitleEmpty){
+      addTask(clearNewTaskTitle)
+    }
   }
 
   return (
@@ -28,6 +33,7 @@ const AddTaskForm = () => {
       />
       <Button
         type='submit'
+        isDisabled={isTaskTitleEmpty}
       >
         Add
       </Button>
