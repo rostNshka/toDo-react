@@ -1,5 +1,6 @@
 const RouterLink = (props) => {
   const {
+    styles,
     to,
     children,
     ...rest
@@ -12,7 +13,7 @@ const RouterLink = (props) => {
   }
 
   return (
-    <a href={to} onClick={handleClick} {...rest}>
+    <a className={styles.link} href={to} onClick={handleClick} {...rest}>
       {children}
     </a>
   )

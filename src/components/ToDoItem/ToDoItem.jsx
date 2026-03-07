@@ -36,7 +36,7 @@ const ToDoItem = (props) => {
       >
         {title}
       </label>
-      <RouterLink to={`/tasks/${id}`} aria-label='Task detail page'>
+      <RouterLink styles={styles} to={`/tasks/${id}`} aria-label='Task detail page'>
         {title}
       </RouterLink>
       <button
