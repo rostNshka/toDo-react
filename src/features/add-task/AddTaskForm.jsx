@@ -1,7 +1,7 @@
-import Field from '../../shared/ui/Field'
-import Button from '../../shared/ui/Button'
+import Field from '@/shared/ui/Field'
+import Button from '@/shared/ui/Button'
 import { useContext, useState } from 'react'
-import { TasksContext } from '../../entities/todo'
+import { TasksContext } from '@/entities/todo'
 
 const AddTaskForm = (props) => {
   const { styles } = props

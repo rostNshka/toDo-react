@@ -1,6 +1,5 @@
-import ToDoItem from '../ToDoItem/ToDoItem'
 import { useContext } from 'react'
-import { TasksContext } from '../../model/TasksContext'
+import { ToDoItem, TasksContext } from '@/entities/todo'
 
 const ToDoList = (props) => {
   const { styles } = props
